@@ -1,0 +1,242 @@
+html {
+  font-family: sans-serif;
+}
+img {
+  object-fit: cover;
+}
+
+.main_content {
+  width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 30px;
+  border: rgb(196, 196, 196) solid 1.5px;
+  border-radius: 20px;
+}
+.header {
+  width: 100%;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header i {
+  font-size: 20px;
+}
+#heading {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 32px;
+}
+.story {
+  width: 340px;
+  height: 100px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inner_story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.story_profile {
+  height: 60px;
+  width: 60px;
+  padding: 3px 3px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  border: rgb(194, 64, 64) 1.5px solid;
+  transition: height 0.3s ease-in, width 0.3s ease-in;
+}
+
+.story_profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#name {
+  font-size: 15px;
+  transition: color 0.3s ease-in;
+}
+.feed_user {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.user_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.user_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user_name h2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.main_feed {
+  max-height: 600px;
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0px 10px;
+}
+.feed_main {
+  width: 400px;
+}
+.feed_img {
+  height: 430px;
+}
+.feed_main img {
+  height: 400px;
+  width: 400px;
+  margin-bottom: 10px;
+}
+.feed_icon i {
+  font-size: 20px;
+  margin-right: 13px;
+}
+.feed_info {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+.feed_info span {
+  margin-top: 5px;
+}
+
+.feed {
+  margin-bottom: 30px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container img,
+.feed_main img {
+  border-radius: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.dot2 {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot2:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
